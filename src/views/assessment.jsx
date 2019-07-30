@@ -30,39 +30,38 @@ class Newmortgage extends Component {
               </div>
             </div>
             <div id="body" className="mobileGrid" style={{textAlign: 'center', paddingLeft: '12px', paddingRight: '12px'}}>
-              <div id="title" style={{marginTop: '80px'}}>
-                <h3 className="font_3" style={{lineHeight: '1.2em', fontWeight: 'bold', color: '#344350', fontSize: '23px', fontFamily: 'Montserrat-Bold,sans-serif'}}>Start Saving Today
+              <div id="title" style={{marginTop: '60px'}}>
+                <h3 className="font_3" style={{lineHeight: '1.2em', fontWeight: 'bold', color: '#324158', fontSize: '23px', fontFamily: 'Montserrat-Bold,sans-serif'}}>Start Saving Today
                 </h3>
               </div>
               <div style={{paddingLeft: '6px', paddingRight: '6px'}}>
-                <h1 className="font_0" style={{fontFamily: 'Montserrat-Italic,sans-serif', color: '#344158', fontSize: '14px', fontWeight: '500', fontStyle: 'italic', marginBottom: '0px'}}>Save 20-30% of your monthly mortgage costs
+                <h1 className="font_0" style={{fontFamily: 'Montserrat-Italic,sans-serif', color: '#324158', fontSize: '13px', fontWeight: '500', fontStyle: 'italic', marginBottom: '0px'}}>Save 20-30% of your monthly mortgage costs
                 </h1>
               </div>
-              <div id="content" style={{textAlign: 'start', marginTop: '20px'}}>
+              <div id="content" style={{textAlign: 'start', marginTop: '10px'}}>
                 <div>
-                  <h6 style={{color:'#344350', fontFamily: 'proxima-n-w01-reg,sans-serif', fontSize: '14px', marginLeft: '12px'}}>Discover Now:</h6>
-                  <div style={{display: 'flex', marginLeft: '12px'}}>
-                    <img src={done} alt="done" style={{width: '14px', height: '14px'}}/>
-                    <h1 className="font_0" style={{marginLeft: '8px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'14px'}}>Which lender will take your case</h1>
-                  </div>
-                  <div style={{display: 'flex', marginLeft: '12px'}}>
-                    <img src={done} alt="done" style={{width: '14px', height: '14px'}}/>
-                    <h1 className="font_0" style={{marginLeft: '8px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'14px'}}>How much can you borrow</h1>
-                  </div>
-                  <div style={{display: 'flex', marginLeft: '12px'}}>
-                    <img src={done} alt="done" style={{width: '14px', height: '14px'}}/>
-                    <h1 className="font_0" style={{marginLeft: '8px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'14px'}}>What is the best rate you can achieve</h1>
-                  </div>
-                  <div style={{marginTop: '15px', textAlign: 'center'}}>
-                  <form action="https://app.lendlord.io/questionnaire">
+                  <form action="https://app.lendlord.io/questionnaire" style={{textAlign: 'center'}}>
                     <Button block color="warning" style={{width: '180px', backgroundColor: '#FF9F08', color: '#fff', padding: '0', borderRadius: '10px', height: '34px', fontWeight: '900', display: 'inline'}} id="newmortgage_go_to_questionnaire" type="submit" value="Yes">Get Started For free
                     </Button>
                   </form>
+                  <div style={{display: 'flex', marginLeft: '12px', marginTop: '20px'}}>
+                    <img src={icon} alt="logo" style={{width: '14px', height: '14px'}}/>
+                    <h1 className="font_0" style={{marginLeft: '8px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'14px'}}>Fill in your portfolio mortgage details</h1>
+                  </div>
+                  <div style={{display: 'flex', marginLeft: '12px'}}>
+                    <img src={icon} alt="logo" style={{width: '14px', height: '14px'}}/>
+                    <h1 className="font_0" style={{marginLeft: '8px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'14px'}}>Lendlord platform will analyse the data</h1>
+                  </div>
+                  <div style={{display: 'flex', marginLeft: '12px'}}>
+                    <img src={icon} alt="logo" style={{width: '14px', height: '14px'}}/>
+                    <h1 className="font_0" style={{marginLeft: '8px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'14px'}}>Discover how much you can save</h1>
+                  </div>
+                  <div style={{marginTop: '15px', textAlign: 'center'}}>
                   </div>
                 </div>
               </div>
               <div style={{marginTop: '20px'}}>
-                <img src={graph} alt="lenders" style={{width: '256px', height: '157px'}}/>
+                <img src={graph} alt="lenders" style={{width: '167px', height: '179px'}}/>
               </div>
             </div>
           </div>
