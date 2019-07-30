@@ -84,9 +84,18 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5rem;
 }
 
-#footer {
-  background-color: #2f353a;
-  height: 261px
+@media screen and (min-width: 801px) {
+  #footer {
+    background-color: #2f353a;
+    height: 261px
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #footer {
+    background-color: #2f353a;
+    height: 230px
+  }
 }
 
 .mainHeader {
