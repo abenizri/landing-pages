@@ -5,6 +5,7 @@ import icon from '../assets/favicon.ico'
 import done from '../assets/ico-done.svg'
 import bestresult from '../assets/best_result.png'
 import logo from '../assets/logo.svg'
+import bullet from '../assets/bullet.svg'
 import '../App.css'
 
 class Assessment extends Component {
@@ -147,7 +148,7 @@ class Assessment extends Component {
             </div>
           </div>
           <div id="footer" style={{display: 'flex'}}>
-            <div id="text" style={{width: '387px', margin: '67px 0px 68px 13%'}}>
+            <div id="text" style={{width: '387px', margin: '5% 0px 5% 13%'}}>
               <p className="font_9" style={{lineHeight: '1.5em'}}>
                 <span style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'raleway,sans-serif'}}>Lendlord is a trading name of Windfall Limited. Windfall Limited is authorised and regulated by the Financial Conduct Authority. FCA Register ref: 225908</span>
               </p>
