@@ -87,15 +87,15 @@ class Assessment extends Component {
         <div>
           <div>
             <div id="header" style={{position: 'static', display: 'grid', height: 'auto', width: '100%', gridTemplatedivs: 'min-content min-content 1fr', gridTemplateColumns: '100%'}}>
-              <div style={{marginTop: '20px', display: 'flex'}}>
-                <div style={{marginLeft: '127px'}}>
+              <div style={{marginTop: '20px', display: 'flex', justifyContent: 'center'}}>
+                <div>
                   <img src={icon} style={{width: '34px', height: '34px'}}/>
                 </div>
                 <div style={{display: 'grid', marginLeft: '6px'}}>
                   <h6 style={{fontSize: '18px', fontStyle: 'italic', color:'#74818F', fontWeight:'bold', fontFamily:'Montserrat-Bold,sans-serif', marginBottom: '0px'}}>Lendlord</h6>
                   <span style={{color: '#324158', fontWeight: 'normal', fontFamily: 'Montserrat-Regular,sans-serif', fontSize: '10px'}}>Free online mortgage broker for landlords</span>
                 </div>
-                <div style={{marginLeft: 'auto', marginRight: '125px', paddingTop: '12px'}}>
+                <div style={{paddingTop: '12px', marginLeft: '60%'}}>
                   <a role="button" href="https://app.lendlord.io/questionnaire" target="_self" data-content="https://app.lendlord.io/questionnaire">
                   <p id="signupp" style={{textAlign: 'right', lineHeight: '34px', color: '#324158', transition: 'color 0.4s ease 0s', font: 'normal normal normal 12px/1.4em Montserrat-Regular,sans-serif'}}>Sign Up Free</p>
                   </a>
@@ -103,49 +103,51 @@ class Assessment extends Component {
               </div>
             </div>
             <div id="body" style={{display: 'grid', position: 'static', height: 'auto', width: '100%', minHeight: '628px', gridTemplatedivs: 'in-content min-content min-content min-content min-content min-content min-content 1fr', gridTemplateColumns: '100%', boxSizing: 'border-box'}}>
-              <div id="title" style={{marginLeft: '222.5px', marginTop: '45px'}}>
-                <h3 className="font_3" style={{fontSize: '48px', lineHeight: '1.2em', fontWeight: 'bold'}}>
-                  <span style={{color: '#344350'}}>
-                    <span style={{fontSize: '46px'}}>
-                      <span className="mainHeader" style={{fontFamily: 'Montserrat-Bold,sans-serif'}}>Get Your Optimum Buy to Let Mortgage</span>
+              <div style={{margin: '0 13%'}}>
+                <div id="title" style={{marginTop: '45px'}}>
+                  <h3 className="font_3" style={{fontSize: '48px', lineHeight: '1.2em', fontWeight: 'bold'}}>
+                    <span style={{color: '#344350'}}>
+                      <span style={{fontSize: '46px'}}>
+                        <span className="mainHeader" style={{fontFamily: 'Montserrat-Bold,sans-serif'}}>Get Your Optimum Buy to Let Mortgage</span>
+                      </span>
                     </span>
-                  </span>
-                </h3>
-                <h1 className="font_0" style={{fontFamily: 'Montserrat-Italic,sans-serif', color: '#344158', fontSize: '20px', fontWeight: '500', fontStyle: 'italic', marginBottom: '0px'}}>Taking a mortgage for a new investment was never as easy to assess
-                </h1>
-              </div>
-              <div id="content" style={{display: 'flex'}}>
-                <div id="leftSide" style={{marginLeft: '222.5px'}}>
-                  <h6 style={{color:'#344350', fontFamily: 'proxima-n-w01-reg,sans-serif', fontSize: '20px'}}>Discover Now:</h6>
-                  <div style={{display: 'flex', marginTop: '40px', marginLeft: '12px'}}>
-                    <img src={done} alt="done" style={{width: '20px', height: '20px'}}/>
-                    <h1 className="font_0" style={{marginLeft: '12px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'20px'}}>Which lender will take your case</h1>
-                  </div>
-                  <div style={{display: 'flex', marginTop: '15px', marginLeft: '12px'}}>
-                    <img src={done} alt="done" style={{width: '20px', height: '20px'}}/>
-                    <h1 className="font_0" style={{marginLeft: '12px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'20px'}}>How much can you borrow</h1>
-                  </div>
-                  <div style={{display: 'flex', marginTop: '15px', marginLeft: '12px'}}>
-                    <img src={done} alt="done" style={{width: '20px', height: '20px'}}/>
-                    <h1 className="font_0" style={{marginLeft: '12px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'20px'}}>What is the best rate you can achieve</h1>
-                  </div>
-                  <div style={{marginTop: '40px'}}>
-                    <form action="https://app.lendlord.io/questionnaire">
-                      <Button block color="warning" style={{width: '180px', backgroundColor: '#FF9F08', color: '#fff', padding: '0', borderRadius: '10px', height: '34px', fontWeight: '900'}} id="newmortgage_go_to_questionnaire" type="submit" value="Yes">Get Started For free</Button>
-                    </form>
-                  </div>
-                  <div style={{marginTop: '16px'}}>
-                    <h1 className="font_0" style={{fontSize:'12px', color: '#344350', fontFamily:'proxima-n-w01-reg,sans-serif', fontWeight:'normal'}}>Requires completion of less than 3 minutes questionnaire</h1>
-                  </div>
+                  </h3>
+                  <h1 className="font_0" style={{fontFamily: 'Montserrat-Italic,sans-serif', color: '#344158', fontSize: '20px', fontWeight: '500', fontStyle: 'italic', marginBottom: '0px'}}>Taking a mortgage for a new investment was never as easy to assess
+                  </h1>
                 </div>
-                <div id="rightSide" style={{marginLeft: '120px'}}>
-                  <img src={bestresult} alt="lenders" style={{width: '468px', height: '287px'}}/>
+                <div id="content" style={{display: 'flex', marginTop: '80px'}}>
+                  <div id="leftSide">
+                    <h6 style={{color:'#344350', fontFamily: 'proxima-n-w01-reg,sans-serif', fontSize: '20px'}}>Discover Now:</h6>
+                    <div style={{display: 'flex', marginTop: '40px', marginLeft: '12px'}}>
+                      <img src={done} alt="done" style={{width: '20px', height: '20px'}}/>
+                      <h1 className="font_0" style={{marginLeft: '12px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'20px'}}>Which lender will take your case</h1>
+                    </div>
+                    <div style={{display: 'flex', marginTop: '15px', marginLeft: '12px'}}>
+                      <img src={done} alt="done" style={{width: '20px', height: '20px'}}/>
+                      <h1 className="font_0" style={{marginLeft: '12px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'20px'}}>How much can you borrow</h1>
+                    </div>
+                    <div style={{display: 'flex', marginTop: '15px', marginLeft: '12px'}}>
+                      <img src={done} alt="done" style={{width: '20px', height: '20px'}}/>
+                      <h1 className="font_0" style={{marginLeft: '12px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'20px'}}>What is the best rate you can achieve</h1>
+                    </div>
+                    <div style={{marginTop: '40px'}}>
+                      <form action="https://app.lendlord.io/questionnaire">
+                        <Button block color="warning" style={{width: '180px', backgroundColor: '#FF9F08', color: '#fff', padding: '0', borderRadius: '10px', height: '34px', fontWeight: '900'}} id="newmortgage_go_to_questionnaire" type="submit" value="Yes">Get Started For free</Button>
+                      </form>
+                    </div>
+                    <div style={{marginTop: '16px'}}>
+                      <h1 className="font_0" style={{fontSize:'12px', color: '#344350', fontFamily:'proxima-n-w01-reg,sans-serif', fontWeight:'normal'}}>Requires completion of less than 3 minutes questionnaire</h1>
+                    </div>
+                  </div>
+                  <div id="rightSide" style={{marginLeft: '15%'}}>
+                    <img src={bestresult} alt="lenders" style={{width: '468px', height: '287px'}}/>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div id="footer" style={{display: 'flex'}}>
-            <div id="text" style={{width: '387px', margin: '67px 0px 68px 222px'}}>
+            <div id="text" style={{width: '387px', margin: '67px 0px 68px 13%'}}>
               <p className="font_9" style={{lineHeight: '1.5em'}}>
                 <span style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'raleway,sans-serif'}}>Lendlord is a trading name of Windfall Limited. Windfall Limited is authorised and regulated by the Financial Conduct Authority. FCA Register ref: 225908</span>
               </p>
