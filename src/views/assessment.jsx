@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button } from 'reactstrap';
+import { Row, Col, Button } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import icon from '../assets/favicon.ico'
 import done from '../assets/ico-done.svg'
@@ -86,24 +86,22 @@ class Newmortgage extends Component {
         <div>
           <div>
             <div id="header" style={{position: 'static', display: 'grid', height: 'auto', width: '100%', gridTemplatedivs: 'min-content min-content 1fr', gridTemplateColumns: '100%'}}>
-              <div style={{marginTop: '20px', display: 'flex'}}>
-                <div style={{marginLeft: '127px'}}>
+              <div style={{marginTop: '20px', display: 'flex', justifyContent: 'center'}}>
+                <div>
                   <img src={icon} style={{width: '34px', height: '34px'}}/>
                 </div>
                 <div style={{display: 'grid', marginLeft: '6px'}}>
                   <h6 style={{fontSize: '18px', fontStyle: 'italic', color:'#74818F', fontWeight:'bold', fontFamily:'Montserrat-Bold,sans-serif', marginBottom: '0px', height: '6px'}}>Lendlord</h6>
                   <span style={{color: '#324158', fontWeight: 'normal', fontFamily: 'Montserrat-Regular,sans-serif', fontSize: '10px'}}>Free online mortgage broker for landlords</span>
                 </div>
-                <div style={{marginLeft: 'auto', marginRight: '125px', paddingTop: '12px'}}>
-                  <a role="button" href="https://app.lendlord.io/questionnaire" target="_self" data-content="https://app.lendlord.io/questionnaire">
-                  <p id="signupp" style={{textAlign: 'right', lineHeight: '34px', color: '#324158', transition: 'color 0.4s ease 0s', font: 'normal normal normal 12px/1.4em Montserrat-Regular,sans-serif'}}>Sign Up Free</p>
-                  </a>
+                <div style={{paddingTop: '12px', marginLeft: '60%'}}>
+                  <a className="signupp" role="button" href="https://app.lendlord.io/questionnaire" target="_self" data-content="https://app.lendlord.io/questionnaire" style={{textDecoration: 'none', textAlign: 'right', lineHeight: '34px', color: '#324158', transition: 'color 0.4s ease 0s', font: 'normal normal normal 12px/1.4em Montserrat-Regular,sans-serif'}}>Sign Up Free</a>
                 </div>
               </div>
             </div>
-            <div id="body" style={{display: 'flex'}}>
+            <div id="body" style={{display: 'flex', justifyContent: 'center'}}>
               <div id="leftSide" style={{display: 'grid'}}>
-                <div id="title" style={{marginLeft: '222.5px', marginTop: '65px'}}>
+                <div id="title" style={{marginTop: '65px'}}>
                   <h3 className="font_3" style={{fontSize: '48px', lineHeight: '1.2em', fontWeight: 'bold'}}>
                     <span style={{color: '#344350'}}>
                       <span style={{fontSize: '46px'}}>
