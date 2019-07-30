@@ -139,7 +139,7 @@ class PortfolioSaving extends Component {
             </div>
           </div>
           <div style={{height: '100px'}}/>
-          <div id="footer" style={{display: 'flex'}}>
+          <div id="footer" style={{display: 'flex', position: 'absolute', width: '100%', bottom: '0'}}>
             <div id="text" style={{width: '387px', margin: '5% 0px 5% 18%'}}>
               <p className="font_9" style={{lineHeight: '1.5em'}}>
                 <span style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'raleway,sans-serif'}}>Lendlord is a trading name of Windfall Limited. Windfall Limited is authorised and regulated by the Financial Conduct Authority. FCA Register ref: 225908</span>
