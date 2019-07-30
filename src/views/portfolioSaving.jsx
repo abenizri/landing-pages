@@ -100,7 +100,7 @@ class PortfolioSaving extends Component {
                   <img src={icon} style={{width: '34px', height: '34px'}}/>
                 </div>
                 <div style={{display: 'grid', marginLeft: '6px'}}>
-                  <h6 style={{fontSize: '18px', fontStyle: 'italic', color:'#74818F', fontWeight:'bold', fontFamily:'Montserrat-Bold,sans-serif', marginBottom: '0px', height: '6px'}}>Lendlord</h6>
+                  <h6 style={{fontSize: '18px', fontStyle: 'italic', color:'#74818F', fontWeight:'bold', fontFamily:'Montserrat-Bold,sans-serif', marginBottom: '4px', height: '6px'}}>Lendlord</h6>
                   <span style={{color: '#324158', fontWeight: 'normal', fontFamily: 'Montserrat-Regular,sans-serif', fontSize: '10px'}}>Free online mortgage broker for landlords</span>
                 </div>
                 <div style={{paddingTop: '12px', marginLeft: '60%'}}>
@@ -145,8 +145,8 @@ class PortfolioSaving extends Component {
                 </div>
               </div>
             </div>
-            <div style={{height: '100px'}}/>
-            <div id="footer" style={{display: 'flex', position: 'fixed', width: '100%', bottom: '0'}}>
+            <div style={{height: '200px'}}/>
+            <div id="footer" style={{display: 'flex'}}>
               <div id="text" style={{width: '387px', margin: '5% 0px 5% 18%'}}>
                 <p className="font_9" style={{lineHeight: '1.5em'}}>
                   <span style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'raleway,sans-serif'}}>Lendlord is a trading name of Windfall Limited. Windfall Limited is authorised and regulated by the Financial Conduct Authority. FCA Register ref: 225908</span>
