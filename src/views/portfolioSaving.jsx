@@ -10,6 +10,14 @@ import '../App.css'
 
 class PortfolioSaving extends Component {
 
+  mouseEnter = (e) => {
+    e.target.style.color = "#F2860A"
+  }
+
+  mouseLeave = (e) => {
+    e.target.style.color = "#324158"
+  }
+
   render() {
     const width = window.innerWidth
     const isMobile = width <= 800
@@ -96,7 +104,7 @@ class PortfolioSaving extends Component {
                   <span style={{color: '#324158', fontWeight: 'normal', fontFamily: 'Montserrat-Regular,sans-serif', fontSize: '10px'}}>Free online mortgage broker for landlords</span>
                 </div>
                 <div style={{paddingTop: '12px', marginLeft: '60%'}}>
-                  <a className="signupp" role="button" href="https://app.lendlord.io/questionnaire" target="_self" data-content="https://app.lendlord.io/questionnaire" style={{textDecoration: 'none', textAlign: 'right', lineHeight: '34px', color: '#324158', transition: 'color 0.4s ease 0s', font: 'normal normal normal 12px/1.4em Montserrat-Regular,sans-serif'}}>Sign Up Free</a>
+                  <a role="button" href="https://app.lendlord.io/questionnaire" target="_self" data-content="https://app.lendlord.io/questionnaire" style={{textDecoration: 'none', textAlign: 'right', lineHeight: '34px', color: '#324158', transition: 'color 0.4s ease 0s', font: 'normal normal normal 12px/1.4em Montserrat-Regular,sans-serif'}} onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>Sign Up Free</a>
                 </div>
               </div>
             </div>
@@ -115,19 +123,19 @@ class PortfolioSaving extends Component {
                   <form action="https://app.lendlord.io/questionnaire" style={{marginTop: '20px'}}>
                     <Button block color="warning" style={{width: '200px', backgroundColor: '#FF9F08', color: '#fff', padding: '0', borderRadius: '10px', height: '34px', fontWeight: '900', fontFamily: 'Montserrat-Bold'}} id="newmortgage_go_to_questionnaire" type="submit" value="Yes">Get Started For free</Button>
                   </form>
-                  <div>
-                    <div style={{display: 'flex', marginTop: '50px', marginLeft: '12px', alignItems: 'center'}}>
-                      <img src={bullet} alt="logo" style={{width: '15px', height: '15px'}}/>
-                      <h1 className="font_0" style={{marginLeft: '12px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'20px', marginBottom: '0px'}}>Fill in your portfolio mortgage details</h1>
-                    </div>
-                    <div style={{display: 'flex', marginLeft: '12px', alignItems: 'center'}}>
-                      <img src={bullet} alt="logo" style={{width: '15px', height: '15px'}}/>
-                      <h1 className="font_0" style={{marginLeft: '12px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'20px', marginBottom: '0px'}}>Lendlord platform will analyse the data</h1>
-                    </div>
-                    <div style={{display: 'flex', marginLeft: '12px', alignItems: 'center'}}>
-                      <img src={bullet} alt="logo" style={{width: '15px', height: '15px'}}/>
-                      <h1 className="font_0" style={{marginLeft: '12px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'20px', marginBottom: '0px'}}>Discover how much you can save</h1>
-                    </div>
+                </div>
+                <div id="bullets">
+                  <div style={{display: 'flex', marginTop: '50px', marginLeft: '12px', alignItems: 'center'}}>
+                    <img src={bullet} alt="logo" style={{width: '15px', height: '15px'}}/>
+                    <h1 className="font_0" style={{marginLeft: '12px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'20px', marginBottom: '0px'}}>Fill in your portfolio mortgage details</h1>
+                  </div>
+                  <div style={{display: 'flex', marginLeft: '12px', alignItems: 'center'}}>
+                    <img src={bullet} alt="logo" style={{width: '15px', height: '15px'}}/>
+                    <h1 className="font_0" style={{marginLeft: '12px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'20px', marginBottom: '0px'}}>Lendlord platform will analyse the data</h1>
+                  </div>
+                  <div style={{display: 'flex', marginLeft: '12px', alignItems: 'center'}}>
+                    <img src={bullet} alt="logo" style={{width: '15px', height: '15px'}}/>
+                    <h1 className="font_0" style={{marginLeft: '12px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'20px', marginBottom: '0px'}}>Discover how much you can save</h1>
                   </div>
                 </div>
               </div>
@@ -137,20 +145,20 @@ class PortfolioSaving extends Component {
                 </div>
               </div>
             </div>
-          </div>
-          <div style={{height: '100px'}}/>
-          <div id="footer" style={{display: 'flex', position: 'absolute', width: '100%', bottom: '0'}}>
-            <div id="text" style={{width: '387px', margin: '5% 0px 5% 18%'}}>
-              <p className="font_9" style={{lineHeight: '1.5em'}}>
-                <span style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'raleway,sans-serif'}}>Lendlord is a trading name of Windfall Limited. Windfall Limited is authorised and regulated by the Financial Conduct Authority. FCA Register ref: 225908</span>
-              </p>
-              <p><span/><span/></p>
-              <p className="font_9" style={{lineHeight: '1.5em'}}>
-                <span style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'raleway,sans-serif'}}>Guidance contained within the website is targeted for UK residents only. Nothing on the website constitutes advice</span>
-              </p>
-            </div>
-            <div id="copyright" style={{margin: 'auto 200px 70px auto'}}>
+            <div style={{height: '100px'}}/>
+            <div id="footer" style={{display: 'flex', position: 'fixed', width: '100%', bottom: '0'}}>
+              <div id="text" style={{width: '387px', margin: '5% 0px 5% 18%'}}>
+                <p className="font_9" style={{lineHeight: '1.5em'}}>
+                  <span style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'raleway,sans-serif'}}>Lendlord is a trading name of Windfall Limited. Windfall Limited is authorised and regulated by the Financial Conduct Authority. FCA Register ref: 225908</span>
+                </p>
+                <p><span/><span/></p>
+                <p className="font_9" style={{lineHeight: '1.5em'}}>
+                  <span style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'raleway,sans-serif'}}>Guidance contained within the website is targeted for UK residents only. Nothing on the website constitutes advice</span>
+                </p>
+              </div>
+              <div id="copyright" style={{margin: 'auto 200px 70px auto'}}>
               <span style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'raleway,sans-serif'}}>© 2019</span>
+              </div>
             </div>
           </div>
         </div>
