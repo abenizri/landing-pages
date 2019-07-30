@@ -5,9 +5,10 @@ import icon from '../assets/favicon.ico'
 import done from '../assets/ico-done.svg'
 import graph from '../assets/graph.png'
 import logo from '../assets/logo.svg'
+import bullet from '../assets/bullet.svg'
 import '../App.css'
 
-class Newmortgage extends Component {
+class PortfolioSaving extends Component {
 
   render() {
     const width = window.innerWidth
@@ -45,15 +46,15 @@ class Newmortgage extends Component {
                     </Button>
                   </form>
                   <div style={{display: 'flex', marginLeft: '12px', marginTop: '20px'}}>
-                    <img src={icon} alt="logo" style={{width: '14px', height: '14px'}}/>
+                    <img src={bullet} alt="logo" style={{width: '14px', height: '14px'}}/>
                     <h1 className="font_0" style={{marginLeft: '8px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'14px'}}>Fill in your portfolio mortgage details</h1>
                   </div>
                   <div style={{display: 'flex', marginLeft: '12px'}}>
-                    <img src={icon} alt="logo" style={{width: '14px', height: '14px'}}/>
+                    <img src={bullet} alt="logo" style={{width: '14px', height: '14px'}}/>
                     <h1 className="font_0" style={{marginLeft: '8px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'14px'}}>Lendlord platform will analyse the data</h1>
                   </div>
                   <div style={{display: 'flex', marginLeft: '12px'}}>
-                    <img src={icon} alt="logo" style={{width: '14px', height: '14px'}}/>
+                    <img src={bullet} alt="logo" style={{width: '14px', height: '14px'}}/>
                     <h1 className="font_0" style={{marginLeft: '8px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'14px'}}>Discover how much you can save</h1>
                   </div>
                   <div style={{marginTop: '15px', textAlign: 'center'}}>
@@ -116,30 +117,30 @@ class Newmortgage extends Component {
                   </form>
                   <div>
                     <div style={{display: 'flex', marginTop: '50px', marginLeft: '12px', alignItems: 'center'}}>
-                      <img src={icon} alt="logo" style={{width: '15px', height: '15px'}}/>
+                      <img src={bullet} alt="logo" style={{width: '15px', height: '15px'}}/>
                       <h1 className="font_0" style={{marginLeft: '12px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'20px', marginBottom: '0px'}}>Fill in your portfolio mortgage details</h1>
                     </div>
                     <div style={{display: 'flex', marginLeft: '12px', alignItems: 'center'}}>
-                      <img src={icon} alt="logo" style={{width: '15px', height: '15px'}}/>
+                      <img src={bullet} alt="logo" style={{width: '15px', height: '15px'}}/>
                       <h1 className="font_0" style={{marginLeft: '12px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'20px', marginBottom: '0px'}}>Lendlord platform will analyse the data</h1>
                     </div>
                     <div style={{display: 'flex', marginLeft: '12px', alignItems: 'center'}}>
-                      <img src={icon} alt="logo" style={{width: '15px', height: '15px'}}/>
+                      <img src={bullet} alt="logo" style={{width: '15px', height: '15px'}}/>
                       <h1 className="font_0" style={{marginLeft: '12px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'20px', marginBottom: '0px'}}>Discover how much you can save</h1>
                     </div>
                   </div>
                 </div>
               </div>
-              <div id="rightSide" style={{marginLeft: '100px', marginTop: '60px'}}>
+              <div id="rightSide" style={{marginLeft: '10%', marginTop: '5%'}}>
                 <div id="rightSide">
                   <img src={graph} alt="lenders" style={{width: '289px', height: '311px'}}/>
                 </div>
               </div>
             </div>
           </div>
-          <div style={{height: '300px'}}/>
+          <div style={{height: '100px'}}/>
           <div id="footer" style={{display: 'flex'}}>
-            <div id="text" style={{width: '387px', margin: '67px 0px 68px 222px'}}>
+            <div id="text" style={{width: '387px', margin: '5% 0px 5% 18%'}}>
               <p className="font_9" style={{lineHeight: '1.5em'}}>
                 <span style={{color: '#FFFFFF', fontSize: '14px', fontFamily: 'raleway,sans-serif'}}>Lendlord is a trading name of Windfall Limited. Windfall Limited is authorised and regulated by the Financial Conduct Authority. FCA Register ref: 225908</span>
               </p>
@@ -158,4 +159,4 @@ class Newmortgage extends Component {
   }
 }
 
-export default Newmortgage
+export default PortfolioSaving
