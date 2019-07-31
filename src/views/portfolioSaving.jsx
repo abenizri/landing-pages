@@ -124,15 +124,15 @@ class PortfolioSaving extends Component {
                 </div>
                 <div id="bullets">
                   <div style={{display: 'flex', marginTop: '50px', marginLeft: '12px', alignItems: 'center'}}>
-                    <img src={bullet} alt="logo" style={{width: '15px', height: '15px'}}/>
+                    <img src={bullet} alt="logo" style={{width: '13px', height: '13px'}}/>
                     <h1 className="font_0" style={{marginLeft: '12px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'20px', marginBottom: '0px'}}>Fill in your portfolio mortgage details</h1>
                   </div>
                   <div style={{display: 'flex', marginLeft: '12px', alignItems: 'center'}}>
-                    <img src={bullet} alt="logo" style={{width: '15px', height: '15px'}}/>
+                    <img src={bullet} alt="logo" style={{width: '13px', height: '13px'}}/>
                     <h1 className="font_0" style={{marginLeft: '12px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'20px', marginBottom: '0px'}}>Lendlord platform will analyse the data</h1>
                   </div>
                   <div style={{display: 'flex', marginLeft: '12px', alignItems: 'center'}}>
-                    <img src={bullet} alt="logo" style={{width: '15px', height: '15px'}}/>
+                    <img src={bullet} alt="logo" style={{width: '13px', height: '13px'}}/>
                     <h1 className="font_0" style={{marginLeft: '12px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'20px', marginBottom: '0px'}}>Discover how much you can save</h1>
                   </div>
                 </div>
