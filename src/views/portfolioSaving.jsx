@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
-import { Row, Col, Button } from 'reactstrap';
+import { Button } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import icon from '../assets/favicon.ico'
-import done from '../assets/ico-done.svg'
 import graph from '../assets/graph.png'
-import logo from '../assets/logo.svg'
 import bullet from '../assets/bullet.svg'
 import '../App.css'
 
@@ -28,7 +26,7 @@ class PortfolioSaving extends Component {
             <div id="header" style={{textAlign: 'center'}}>
               <div style={{display: 'inline-flex'}}>
                 <div style={{marginTop: '13px', marginRight: '7px'}}>
-                  <img src={icon} style={{width: '30px', height: '30px'}}/>
+                  <img src={icon} alt="icon" style={{width: '30px', height: '30px'}}/>
                 </div>
                 <div style={{paddingTop: '18px'}}>
                   <h6 style={{fontSize: '18px', fontStyle: 'italic', color:'#74818F', fontWeight:'bold', fontFamily:'Montserrat-Bold,sans-serif', marginBottom: '0px'}}>Lendlord</h6>
@@ -97,7 +95,7 @@ class PortfolioSaving extends Component {
             <div id="header" style={{position: 'static', display: 'grid', height: 'auto', width: '100%', gridTemplatedivs: 'min-content min-content 1fr', gridTemplateColumns: '100%'}}>
               <div style={{marginTop: '20px', display: 'flex', justifyContent: 'center'}}>
                 <div>
-                  <img src={icon} style={{width: '34px', height: '34px'}}/>
+                  <img src={icon} alt="icon" style={{width: '34px', height: '34px'}}/>
                 </div>
                 <div style={{display: 'grid', marginLeft: '6px'}}>
                   <h6 style={{fontSize: '18px', fontStyle: 'italic', color:'#74818F', fontWeight:'bold', fontFamily:'Montserrat-Bold,sans-serif', marginBottom: '4px', height: '6px'}}>Lendlord</h6>

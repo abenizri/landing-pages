@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Newmortgage from './views/newmortgage.jsx'
+import NewMortgage from './views/newmortgage.jsx'
 import PortfolioSaving from './views/portfolioSaving.jsx'
 
 class App extends Component {
@@ -11,8 +11,8 @@ class App extends Component {
       <Router>
         <Switch>
           <Route exact path="/portfolio-savings" component={PortfolioSaving} />
-          <Route exact path="/newmortgage" component={Newmortgage} />
-          <Route path="/" name="newmorgage" component={Newmortgage} />
+          <Route exact path="/newmortgage" component={NewMortgage} />
+          <Route path="/" name="newmorgage" component={NewMortgage} />
         </Switch>
       </Router>
     );
