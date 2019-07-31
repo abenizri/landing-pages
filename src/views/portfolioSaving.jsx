@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button } from 'reactstrap';
+import { Button, Col } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import icon from '../assets/favicon.ico'
 import graph from '../assets/graph.png'
@@ -45,27 +45,27 @@ class PortfolioSaving extends Component {
                 <h1 className="font_0" style={{fontFamily: 'Montserrat-Italic,sans-serif', color: '#324158', fontSize: '13px', fontWeight: '500', fontStyle: 'italic', marginBottom: '0px'}}>Save 20-30% of your monthly mortgage costs
                 </h1>
               </div>
-              <div id="content" style={{textAlign: 'start', marginTop: '10px'}}>
-                <div>
+              <div id="content" style={{textAlign: 'start', marginTop: '20px'}}>
+                <Col xs={{size: 10, offset: 1}} style={{padding: '0px'}}>
                   <form action="https://app.lendlord.io/questionnaire" style={{textAlign: 'center'}}>
                     <Button block color="warning" style={{width: '180px', backgroundColor: '#FF9F08', color: '#fff', padding: '0', borderRadius: '10px', height: '34px', fontWeight: '900', display: 'inline'}} id="newmortgage_go_to_questionnaire" type="submit" value="Yes">Get Started For free
                     </Button>
                   </form>
-                  <div style={{display: 'flex', marginLeft: '12px', marginTop: '20px'}}>
-                    <img src={bullet} alt="logo" style={{width: '14px', height: '14px'}}/>
-                    <h1 className="font_0" style={{marginLeft: '8px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'14px'}}>Fill in your portfolio mortgage details</h1>
+                  <div style={{display: 'inline-flex', marginTop: '30px', marginBottom: '8px', alignItems: 'center'}}>
+                    <img src={bullet} alt="logo" style={{width: '10px', height: '10px'}}/>
+                    <h1 className="font_0" style={{marginLeft: '8px', marginBottom: '0px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'12px'}}>Fill in your portfolio mortgage details</h1>
                   </div>
-                  <div style={{display: 'flex', marginLeft: '12px'}}>
-                    <img src={bullet} alt="logo" style={{width: '14px', height: '14px'}}/>
-                    <h1 className="font_0" style={{marginLeft: '8px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'14px'}}>Lendlord platform will analyse the data</h1>
+                  <div style={{display: 'inline-flex', alignItems: 'center', marginBottom: '8px'}}>
+                    <img src={bullet} alt="logo" style={{width: '10px', height: '10px'}}/>
+                    <h1 className="font_0" style={{marginLeft: '8px', marginBottom: '0px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'12px'}}>Lendlord platform will analyse the data</h1>
                   </div>
-                  <div style={{display: 'flex', marginLeft: '12px'}}>
-                    <img src={bullet} alt="logo" style={{width: '14px', height: '14px'}}/>
-                    <h1 className="font_0" style={{marginLeft: '8px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'14px'}}>Discover how much you can save</h1>
+                  <div style={{display: 'inline-flex', alignItems: 'center', marginBottom: '8px'}}>
+                    <img src={bullet} alt="logo" style={{width: '10px', height: '10px'}}/>
+                    <h1 className="font_0" style={{marginLeft: '8px', marginBottom: '0px', fontWeight:'normal', fontFamily:'proxima-n-w01-reg,sans-serif', color:'#344350', fontSize:'12px'}}>Discover how much you can save</h1>
                   </div>
                   <div style={{marginTop: '15px', textAlign: 'center'}}>
                   </div>
-                </div>
+                </Col>
               </div>
               <div style={{marginTop: '20px'}}>
                 <img src={graph} alt="lenders" style={{width: '167px', height: '179px'}}/>
