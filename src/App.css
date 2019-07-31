@@ -34,17 +34,17 @@
 }
 
 .font_0 {
-  font: normal normal bold 28px/1.4em raleway,sans-serif;
+  font: normal normal bold 28px/1.4em 'raleway',sans-serif;
   color: #061551;
 }
 
 .font_3 {
-  font: normal normal bold 55px/1.4em raleway,sans-serif;
+  font: normal normal bold 55px/1.4em 'raleway',sans-serif;
   color: #2F2E2E
 }
 
 .font_9 {
-  font: normal normal normal 14px/1.4em raleway,sans-serif;
+  font: normal normal normal 14px/1.4em 'raleway',sans-serif;
   color: #2F2E2E;
 }
 
